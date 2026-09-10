@@ -2,10 +2,6 @@ package xyz.lunalna.modifierkeybinds.mixin;
 
 import com.mojang.blaze3d.platform.InputConstants;
 import net.minecraft.client.KeyMapping;
-import net.minecraft.client.gui.screens.options.controls.KeyBindsList;
-import net.minecraft.client.gui.screens.options.controls.KeyBindsScreen;
-import net.minecraft.client.input.KeyEvent;
-import net.minecraft.util.Util;
 import org.lwjgl.glfw.GLFW;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -16,6 +12,8 @@ import xyz.lunalna.modifierkeybinds.KeyChord;
 import xyz.lunalna.modifierkeybinds.ModifierKeybinds;
 
 //? if >=1.20.5 {
+import net.minecraft.client.gui.screens.options.controls.KeyBindsList;
+import net.minecraft.client.gui.screens.options.controls.KeyBindsScreen;
 //?}
 //? if <1.17 {
 /*import net.minecraft.client.gui.screens.controls.ControlsScreen;
@@ -26,14 +24,12 @@ import xyz.lunalna.modifierkeybinds.ModifierKeybinds;
 //?} else {
 //?}
 //? if >=1.21.11 {
+import net.minecraft.client.input.KeyEvent;
+import net.minecraft.util.Util;
 //?} else {
 /*import net.minecraft.Util;
  */
 //?}
-//? if >=1.21.11 {
-
-//?}
-
 //? if <1.17 {
 /*@Mixin(ControlsScreen.class)
  *///?} else {

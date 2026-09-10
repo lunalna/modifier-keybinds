@@ -2,8 +2,6 @@ package xyz.lunalna.modifierkeybinds.mixin;
 
 import com.mojang.blaze3d.platform.InputConstants;
 import net.minecraft.client.KeyMapping;
-import net.minecraft.client.gui.screens.options.controls.KeyBindsScreen;
-import net.minecraft.client.input.KeyEvent;
 import net.minecraft.network.chat.Component;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -15,6 +13,7 @@ import xyz.lunalna.modifierkeybinds.ModifierKeybinds;
 import xyz.lunalna.modifierkeybinds.client.Screens;
 
 //? if >=1.21.11 {
+import net.minecraft.client.input.KeyEvent;
 //?}
 //? if <1.17 {
 /*import net.minecraft.client.gui.screens.controls.ControlsScreen;
@@ -23,6 +22,7 @@ import xyz.lunalna.modifierkeybinds.client.Screens;
 /*import net.minecraft.client.gui.screens.controls.KeyBindsScreen;
  */
 //?} else {
+import net.minecraft.client.gui.screens.options.controls.KeyBindsScreen;
 //?}
 
 @Mixin(KeyMapping.class)
