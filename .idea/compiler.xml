@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <option name="defaultObfuscationEnv" value="named:intermediary" />
+        <option name="inMapFileNamedIntermediary" value="$USER_HOME$/.gradle/caches/essential-loom/1.12.2/de.oceanlabs.mcp.mcp_stable.1_12_2.39-1.12-forge-1.12.2-14.23.5.2847/mappings-mixin-srg.tiny" />
+        <option name="outMapFileNamedIntermediary" value="$PROJECT_DIR$/versions/1.12.2-forge/build/loom-cache/mixin-map-de.oceanlabs.mcp.mcp_stable.1_12_2.39-1.12-forge-1.12.2-14.23.5.2847.main.tiny" />
+        <option name="outRefMapFile" value="$PROJECT_DIR$/versions/1.12.2-forge/build/classes/java/main/modifier_keybinds.refmap.json" />
+        <option name="quiet" value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.7/3d051c66329d162a52fc062f7da912c37904a6a0/mixin-0.8.7-processor.jar" />
+        </processorPath>
+        <module name="Modifier_Keybinds.1_12_2-forge.main" />
+      </profile>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <option name="defaultObfuscationEnv" value="searge" />
+        <option name="mappingTypes" value="tsrg" />
+        <option name="outRefMapFile" value="$PROJECT_DIR$/versions/1.18.2-forge/build/mixin/modifier_keybinds.refmap.json" />
+        <option name="outTsrgFile" value="$PROJECT_DIR$/versions/1.18.2-forge/build/mixin/modifier_keybinds.refmap.json.mappings.tsrg" />
+        <option name="pluginVersion" value="0.7" />
+        <option name="reobfTsrgFile" value="$PROJECT_DIR$/versions/1.18.2-forge/build/moddev/artifacts/namedToIntermediate.tsrg" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/6d1c8bf4c28e697f472a83bd6add76ec4951734/mixin-0.8.5-processor.jar" />
+        </processorPath>
+        <module name="Modifier_Keybinds.1_18_2-forge.main" />
+      </profile>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <option name="defaultObfuscationEnv" value="searge" />
+        <option name="mappingTypes" value="tsrg" />
+        <option name="outRefMapFile" value="$PROJECT_DIR$/versions/1.19.2-forge/build/mixin/modifier_keybinds.refmap.json" />
+        <option name="outTsrgFile" value="$PROJECT_DIR$/versions/1.19.2-forge/build/mixin/modifier_keybinds.refmap.json.mappings.tsrg" />
+        <option name="pluginVersion" value="0.7" />
+        <option name="reobfTsrgFile" value="$PROJECT_DIR$/versions/1.19.2-forge/build/moddev/artifacts/namedToIntermediate.tsrg" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/6d1c8bf4c28e697f472a83bd6add76ec4951734/mixin-0.8.5-processor.jar" />
+        </processorPath>
+        <module name="Modifier_Keybinds.1_19_2-forge.main" />
+      </profile>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <option name="defaultObfuscationEnv" value="searge" />
+        <option name="mappingTypes" value="tsrg" />
+        <option name="outRefMapFile" value="$PROJECT_DIR$/versions/1.20.1-forge/build/mixin/modifier_keybinds.refmap.json" />
+        <option name="outTsrgFile" value="$PROJECT_DIR$/versions/1.20.1-forge/build/mixin/modifier_keybinds.refmap.json.mappings.tsrg" />
+        <option name="pluginVersion" value="0.7" />
+        <option name="reobfTsrgFile" value="$PROJECT_DIR$/versions/1.20.1-forge/build/moddev/artifacts/namedToIntermediate.tsrg" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/6d1c8bf4c28e697f472a83bd6add76ec4951734/mixin-0.8.5-processor.jar" />
+        </processorPath>
+        <module name="Modifier_Keybinds.1_20_1-forge.main" />
+      </profile>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <option name="defaultObfuscationEnv" value="named:intermediary" />
+        <option name="inMapFileNamedIntermediary" value="$USER_HOME$/.gradle/caches/essential-loom/1.8.9/de.oceanlabs.mcp.mcp_stable.1_8_9.22-1.8.9-forge-1.8.9-11.15.1.2318-1.8.9/mappings-mixin-srg.tiny" />
+        <option name="outMapFileNamedIntermediary" value="$PROJECT_DIR$/versions/1.8.9-forge/build/loom-cache/mixin-map-de.oceanlabs.mcp.mcp_stable.1_8_9.22-1.8.9-forge-1.8.9-11.15.1.2318-1.8.9.main.tiny" />
+        <option name="outRefMapFile" value="$PROJECT_DIR$/versions/1.8.9-forge/build/classes/java/main/modifier_keybinds.refmap.json" />
+        <option name="quiet" value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.7/3d051c66329d162a52fc062f7da912c37904a6a0/mixin-0.8.7-processor.jar" />
+        </processorPath>
+        <module name="Modifier_Keybinds.1_8_9-forge.main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Modifier_Keybinds.1_12_2-forge" options="-AoutRefMapFile=$PROJECT_DIR$/versions/1.12.2-forge/build/classes/java/main/modifier_keybinds.refmap.json -AdefaultObfuscationEnv=named:intermediary -Aquiet=true -AoutMapFileNamedIntermediary=$PROJECT_DIR$/versions/1.12.2-forge/build/loom-cache/mixin-map-de.oceanlabs.mcp.mcp_stable.1_12_2.39-1.12-forge-1.12.2-14.23.5.2847.main.tiny -AinMapFileNamedIntermediary=$USER_HOME$/.gradle/caches/essential-loom/1.12.2/de.oceanlabs.mcp.mcp_stable.1_12_2.39-1.12-forge-1.12.2-14.23.5.2847/mappings-mixin-srg.tiny" />
+      <module name="Modifier_Keybinds.1_12_2-forge.main" options="-AoutRefMapFile=$PROJECT_DIR$/versions/1.12.2-forge/build/classes/java/main/modifier_keybinds.refmap.json -AdefaultObfuscationEnv=named:intermediary -Aquiet=true -AoutMapFileNamedIntermediary=$PROJECT_DIR$/versions/1.12.2-forge/build/loom-cache/mixin-map-de.oceanlabs.mcp.mcp_stable.1_12_2.39-1.12-forge-1.12.2-14.23.5.2847.main.tiny -AinMapFileNamedIntermediary=$USER_HOME$/.gradle/caches/essential-loom/1.12.2/de.oceanlabs.mcp.mcp_stable.1_12_2.39-1.12-forge-1.12.2-14.23.5.2847/mappings-mixin-srg.tiny" />
+      <module name="Modifier_Keybinds.1_12_2-forge.test" options="-AoutRefMapFile=$PROJECT_DIR$/versions/1.12.2-forge/build/classes/java/test/test-modifier_keybinds.refmap.json -AdefaultObfuscationEnv=named:intermediary -Aquiet=true -AoutMapFileNamedIntermediary=$PROJECT_DIR$/versions/1.12.2-forge/build/loom-cache/mixin-map-de.oceanlabs.mcp.mcp_stable.1_12_2.39-1.12-forge-1.12.2-14.23.5.2847.test.tiny -AinMapFileNamedIntermediary=$USER_HOME$/.gradle/caches/essential-loom/1.12.2/de.oceanlabs.mcp.mcp_stable.1_12_2.39-1.12-forge-1.12.2-14.23.5.2847/mappings-mixin-srg.tiny" />
+      <module name="Modifier_Keybinds.1_16_5-forge" options="-AoutRefMapFile=$PROJECT_DIR$/versions/1.16.5-forge/build/classes/java/main/modifier_keybinds.refmap.json -AdefaultObfuscationEnv=named:intermediary -Aquiet=true -AoutMapFileNamedIntermediary=$PROJECT_DIR$/versions/1.16.5-forge/build/loom-cache/mixin-map-loom.mappings.1_16_5.layered+hash.40545-v2-forge-1.16.5-36.2.42.main.tiny -AinMapFileNamedIntermediary=$USER_HOME$/.gradle/caches/essential-loom/1.16.5/loom.mappings.1_16_5.layered+hash.40545-v2-forge-1.16.5-36.2.42/mappings-mixin-srg.tiny" />
+      <module name="Modifier_Keybinds.1_16_5-forge.main" options="-AoutRefMapFile=$PROJECT_DIR$/versions/1.16.5-forge/build/classes/java/main/modifier_keybinds.refmap.json -AdefaultObfuscationEnv=named:intermediary -Aquiet=true -AoutMapFileNamedIntermediary=$PROJECT_DIR$/versions/1.16.5-forge/build/loom-cache/mixin-map-loom.mappings.1_16_5.layered+hash.40545-v2-forge-1.16.5-36.2.42.main.tiny -AinMapFileNamedIntermediary=$USER_HOME$/.gradle/caches/essential-loom/1.16.5/loom.mappings.1_16_5.layered+hash.40545-v2-forge-1.16.5-36.2.42/mappings-mixin-srg.tiny" />
+      <module name="Modifier_Keybinds.1_16_5-forge.test" options="-AoutRefMapFile=$PROJECT_DIR$/versions/1.16.5-forge/build/classes/java/test/test-modifier_keybinds.refmap.json -AdefaultObfuscationEnv=named:intermediary -Aquiet=true -AoutMapFileNamedIntermediary=$PROJECT_DIR$/versions/1.16.5-forge/build/loom-cache/mixin-map-loom.mappings.1_16_5.layered+hash.40545-v2-forge-1.16.5-36.2.42.test.tiny -AinMapFileNamedIntermediary=$USER_HOME$/.gradle/caches/essential-loom/1.16.5/loom.mappings.1_16_5.layered+hash.40545-v2-forge-1.16.5-36.2.42/mappings-mixin-srg.tiny" />
+      <module name="Modifier_Keybinds.1_18_2-forge.main" options="-AreobfTsrgFile=$PROJECT_DIR$/versions/1.18.2-forge/build/moddev/artifacts/namedToIntermediate.tsrg -AoutTsrgFile=$PROJECT_DIR$/versions/1.18.2-forge/build/mixin/modifier_keybinds.refmap.json.mappings.tsrg -AoutRefMapFile=$PROJECT_DIR$/versions/1.18.2-forge/build/mixin/modifier_keybinds.refmap.json -AmappingTypes=tsrg -ApluginVersion=0.7 -AdefaultObfuscationEnv=searge" />
+      <module name="Modifier_Keybinds.1_19_2-forge.main" options="-AreobfTsrgFile=$PROJECT_DIR$/versions/1.19.2-forge/build/moddev/artifacts/namedToIntermediate.tsrg -AoutTsrgFile=$PROJECT_DIR$/versions/1.19.2-forge/build/mixin/modifier_keybinds.refmap.json.mappings.tsrg -AoutRefMapFile=$PROJECT_DIR$/versions/1.19.2-forge/build/mixin/modifier_keybinds.refmap.json -AmappingTypes=tsrg -ApluginVersion=0.7 -AdefaultObfuscationEnv=searge" />
+      <module name="Modifier_Keybinds.1_20_1-forge.main" options="-AreobfTsrgFile=$PROJECT_DIR$/versions/1.20.1-forge/build/moddev/artifacts/namedToIntermediate.tsrg -AoutTsrgFile=$PROJECT_DIR$/versions/1.20.1-forge/build/mixin/modifier_keybinds.refmap.json.mappings.tsrg -AoutRefMapFile=$PROJECT_DIR$/versions/1.20.1-forge/build/mixin/modifier_keybinds.refmap.json -AmappingTypes=tsrg -ApluginVersion=0.7 -AdefaultObfuscationEnv=searge" />
+      <module name="Modifier_Keybinds.1_8_9-forge" options="-AoutRefMapFile=$PROJECT_DIR$/versions/1.8.9-forge/build/classes/java/main/modifier_keybinds.refmap.json -AdefaultObfuscationEnv=named:intermediary -Aquiet=true -AoutMapFileNamedIntermediary=$PROJECT_DIR$/versions/1.8.9-forge/build/loom-cache/mixin-map-de.oceanlabs.mcp.mcp_stable.1_8_9.22-1.8.9-forge-1.8.9-11.15.1.2318-1.8.9.main.tiny -AinMapFileNamedIntermediary=$USER_HOME$/.gradle/caches/essential-loom/1.8.9/de.oceanlabs.mcp.mcp_stable.1_8_9.22-1.8.9-forge-1.8.9-11.15.1.2318-1.8.9/mappings-mixin-srg.tiny" />
+      <module name="Modifier_Keybinds.1_8_9-forge.main" options="-AoutRefMapFile=$PROJECT_DIR$/versions/1.8.9-forge/build/classes/java/main/modifier_keybinds.refmap.json -AdefaultObfuscationEnv=named:intermediary -Aquiet=true -AoutMapFileNamedIntermediary=$PROJECT_DIR$/versions/1.8.9-forge/build/loom-cache/mixin-map-de.oceanlabs.mcp.mcp_stable.1_8_9.22-1.8.9-forge-1.8.9-11.15.1.2318-1.8.9.main.tiny -AinMapFileNamedIntermediary=$USER_HOME$/.gradle/caches/essential-loom/1.8.9/de.oceanlabs.mcp.mcp_stable.1_8_9.22-1.8.9-forge-1.8.9-11.15.1.2318-1.8.9/mappings-mixin-srg.tiny" />
+      <module name="Modifier_Keybinds.1_8_9-forge.test" options="-AoutRefMapFile=$PROJECT_DIR$/versions/1.8.9-forge/build/classes/java/test/test-modifier_keybinds.refmap.json -AdefaultObfuscationEnv=named:intermediary -Aquiet=true -AoutMapFileNamedIntermediary=$PROJECT_DIR$/versions/1.8.9-forge/build/loom-cache/mixin-map-de.oceanlabs.mcp.mcp_stable.1_8_9.22-1.8.9-forge-1.8.9-11.15.1.2318-1.8.9.test.tiny -AinMapFileNamedIntermediary=$USER_HOME$/.gradle/caches/essential-loom/1.8.9/de.oceanlabs.mcp.mcp_stable.1_8_9.22-1.8.9-forge-1.8.9-11.15.1.2318-1.8.9/mappings-mixin-srg.tiny" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "xyz.lunalna.modifierkeybinds.mixin",
+  "compatibilityLevel": "${java}",
+  "client": [
+    "KeyBindsScreenMixin",
+    "KeyboardHandlerMixin",
+    "KeyMappingAccessor",
+    "KeyMappingMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

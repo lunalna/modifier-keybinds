@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "target": "@env(DEFAULT)",
+  "minVersion": "0.8",
+  "package": "xyz.lunalna.modifierkeybinds.legacy.mixin",
+  "refmap": "modifier_keybinds.refmap.json",
+  "compatibilityLevel": "JAVA_8",
+  "client": [
+    "GuiControlsMixin",
+    "KeyBindingAccessor",
+    "KeyBindingMixin",
+    "KeyEntryMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

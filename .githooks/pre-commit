@@ -1,0 +1,22 @@
+#!/bin/sh
+
+set -eu
+
+repo_root=$(git rev-parse --show-toplevel)
+settings_file="$repo_root/settings.gradle.kts"
+controller_file="$repo_root/stonecutter.gradle.kts"
+
+vcs_version=$(sed -n 's/^[[:space:]]*vcsVersion[[:space:]]*=[[:space:]]*"\([^"]*\)".*/\1/p' "$settings_file" | head -n 1)
+active_version=$(sed -n 's/^[[:space:]]*stonecutter[[:space:]][[:space:]]*active[[:space:]][[:space:]]*"\([^"]*\)".*/\1/p' "$controller_file" | head -n 1)
+
+if [ -z "$vcs_version" ] || [ -z "$active_version" ]; then
+    printf '%s\n' "Could not determine Stonecutter's active or VCS version." >&2
+    exit 1
+fi
+
+if [ "$active_version" != "$vcs_version" ]; then
+    printf '%s\n' \
+        "Stonecutter is active on $active_version, but commits must use $vcs_version." \
+        'Run ./gradlew "Reset active project", then stage the normalized files again.' >&2
+    exit 1
+fi

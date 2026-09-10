@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "${id}",
+  "version": "${version}",
+  "name": "${name}",
+  "description": "Allows using key modifiers in every Minecraft key binding.",
+  "authors": [
+    "lunalna"
+  ],
+  "license": "MPL-2.0",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "xyz.lunalna.modifierkeybinds.ModifierKeybindsFabric"
+    ]
+  },
+  "mixins": [
+    "modifier_keybinds.mixins.json"
+  ],
+  "breaks": {
+    "amecs-reborn": "*",
+    "enhancedkeybinds": "*",
+    "multi-key-bindings": "*",
+    "too_many_shortcuts": "*"
+  },
+  "depends": {
+    "fabricloader": ">=0.17",
+    "minecraft": "${minecraft}"
+  }
+}

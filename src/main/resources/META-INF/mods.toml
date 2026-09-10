@@ -1,0 +1,18 @@
+modLoader = "javafml"
+loaderVersion = "[40,)"
+license = "MPL-2.0"
+
+[[mods]]
+modId = "${id}"
+version = "${version}"
+displayName = "${name}"
+authors = "lunalna"
+description = "Allows using key modifiers in every Minecraft key binding."
+displayTest = "IGNORE_ALL_VERSION"
+
+[[dependencies."${id}"]]
+modId = "minecraft"
+mandatory = true
+versionRange = "${minecraft}"
+ordering = "NONE"
+side = "CLIENT"

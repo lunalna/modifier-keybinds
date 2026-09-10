@@ -1,0 +1,12 @@
+[
+  {
+    "modid": "modifier_keybinds",
+    "name": "Modifier Keybinds",
+    "description": "Allows using key modifiers in every Minecraft key binding.",
+    "version": "${version}",
+    "mcversion": "${minecraft}",
+    "authorList": [
+      "lunalna"
+    ]
+  }
+]

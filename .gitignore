@@ -1,0 +1,51 @@
+# Gradle
+
+**/.gradle/
+**/.kotlin/
+/**/build/
+/versions/
+
+# IntelliJ IDEA
+
+/.idea/*
+!/.idea/.gitignore
+!/.idea/.name
+!/.idea/compiler.xml
+!/.idea/gradle.xml
+!/.idea/inspectionProfiles/
+!/.idea/inspectionProfiles/Project_Default.xml
+!/.idea/jsonSchemas.xml
+!/.idea/misc.xml
+!/.idea/runConfigurations/
+!/.idea/vcs.xml
+*.iml
+*.ipr
+*.iws
+/out/
+
+# Eclipse
+
+*.launch
+/.settings/
+/.classpath
+/.project
+/bin/
+
+# Visual Studio Code
+
+/.vscode/
+
+# macOS
+
+.DS_Store
+
+# Minecraft development runtime
+
+/run/
+
+# Java diagnostics
+
+hs_err_*.log
+replay_*.log
+*.hprof
+*.jfr
