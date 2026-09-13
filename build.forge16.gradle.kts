@@ -2,7 +2,9 @@ buildscript {
     repositories { maven("https://maven.architectury.dev") }
     dependencies { classpath("dev.architectury:architectury-pack200:0.1.3") }
 }
-plugins { id("gg.essential.loom") version "1.15.50" }
+plugins {
+    id("gg.essential.loom") version "1.15.50"
+}
 
 version = "1.0.0+1.16.5"
 group = "xyz.lunalna"
@@ -26,6 +28,18 @@ java {
     sourceCompatibility = JavaVersion.VERSION_1_8
     targetCompatibility = JavaVersion.VERSION_1_8
     toolchain.languageVersion.set(JavaLanguageVersion.of(17))
+}
+tasks.register<PublishModrinthVersion>("modrinth") {
+    token.set(project.providers.environmentVariable("MODRINTH_TOKEN"))
+    projectId.set("modifier-keybinds")
+    versionNumber.set("1.0.0+1.16.5-forge")
+    versionName.set("Modifier Keybinds 1.0.0 for 1.16.5 (Forge)")
+    versionType.set("release")
+    primaryFile.set(tasks.named<AbstractArchiveTask>("remapJar").flatMap { it.archiveFile })
+    sourcesFile.set(tasks.named<AbstractArchiveTask>("remapSourcesJar").flatMap { it.archiveFile })
+    gameVersions.add("1.16.5")
+    loaders.add("forge")
+    environment.set("client_only")
 }
 tasks.processResources {
     filesMatching("pack.mcmeta") { expand("pack_format" to 6) }

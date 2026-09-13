@@ -15,6 +15,9 @@ val requiredJava = when {
     else -> JavaVersion.VERSION_1_8
 }
 
+val compatibleVersions: List<String> = sc.properties.rawOrNull("mod", "mc_releases")
+    ?.asList().orEmpty().map { it.toString() }
+
 repositories {
     /**
      * Restricts dependency search of the given [groups] to the [maven URL][url],
@@ -69,6 +72,19 @@ java {
         vendor = JvmVendorSpec.ADOPTIUM
         languageVersion = JavaLanguageVersion.of(requiredJava.majorVersion)
     }
+}
+
+tasks.register<PublishModrinthVersion>("modrinth") {
+    token.set(project.providers.environmentVariable("MODRINTH_TOKEN"))
+    projectId.set("modifier-keybinds")
+    versionNumber.set("${project.property("mod.version")}+${sc.current.version}-forge")
+    versionName.set("${project.property("mod.name")} ${project.property("mod.version")} for ${sc.current.version} (Forge)")
+    versionType.set("release")
+    primaryFile.set(tasks.named<AbstractArchiveTask>("reobfJar").flatMap { it.archiveFile })
+    sourcesFile.set(tasks.named<Jar>("sourcesJar").flatMap { it.archiveFile })
+    gameVersions.addAll(compatibleVersions)
+    loaders.add("forge")
+    environment.set("client_only")
 }
 
 tasks {

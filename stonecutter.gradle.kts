@@ -4,31 +4,39 @@ plugins {
 
 stonecutter active "26.2.x-fabric"
 
+val supportedTargets = listOf(
+    "1.8.9-forge",
+    "1.12.2-forge",
+    "1.16.5-fabric",
+    "1.16.5-forge",
+    "1.18.2-fabric",
+    "1.18.2-forge",
+    "1.19.2-fabric",
+    "1.19.2-forge",
+    "1.20.1-fabric",
+    "1.20.1-forge",
+    "1.21.4-fabric",
+    "1.21.4-neoforge",
+    "1.21.8-fabric",
+    "1.21.8-neoforge",
+    "1.21.1-fabric",
+    "1.21.1-neoforge",
+    "1.21.11-fabric",
+    "1.21.11-neoforge",
+    "26.2.x-fabric",
+    "26.2.x-neoforge"
+)
+
 tasks.register("chiseledBuild") {
     group = "build"
     description = "Builds and collects every supported Minecraft and loader target"
-    dependsOn(
-        ":1.8.9-forge:buildAndCollect",
-        ":1.12.2-forge:buildAndCollect",
-        ":1.16.5-fabric:buildAndCollect",
-        ":1.16.5-forge:buildAndCollect",
-        ":1.18.2-fabric:buildAndCollect",
-        ":1.18.2-forge:buildAndCollect",
-        ":1.19.2-fabric:buildAndCollect",
-        ":1.19.2-forge:buildAndCollect",
-        ":1.20.1-fabric:buildAndCollect",
-        ":1.20.1-forge:buildAndCollect",
-        ":1.21.4-fabric:buildAndCollect",
-        ":1.21.4-neoforge:buildAndCollect",
-        ":1.21.8-fabric:buildAndCollect",
-        ":1.21.8-neoforge:buildAndCollect",
-        ":1.21.1-fabric:buildAndCollect",
-        ":1.21.1-neoforge:buildAndCollect",
-        ":1.21.11-fabric:buildAndCollect",
-        ":1.21.11-neoforge:buildAndCollect",
-        ":26.2.x-fabric:buildAndCollect",
-        ":26.2.x-neoforge:buildAndCollect"
-    )
+    dependsOn(supportedTargets.map { ":$it:buildAndCollect" })
+}
+
+tasks.register("publishModrinth") {
+    group = "publishing"
+    description = "Builds and publishes every supported Minecraft and loader target to Modrinth"
+    dependsOn(supportedTargets.map { ":$it:modrinth" })
 }
 
 // See https://stonecutter.kikugie.dev/wiki/config/params

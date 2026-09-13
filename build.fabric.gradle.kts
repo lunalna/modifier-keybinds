@@ -77,6 +77,19 @@ java {
     }
 }
 
+tasks.register<PublishModrinthVersion>("modrinth") {
+    token.set(project.providers.environmentVariable("MODRINTH_TOKEN"))
+    projectId.set("modifier-keybinds")
+    versionNumber.set("${project.property("mod.version")}+${sc.current.version}-fabric")
+    versionName.set("${project.property("mod.name")} ${project.property("mod.version")} for ${sc.current.version} (Fabric)")
+    versionType.set("release")
+    primaryFile.set(loomx.modJar.flatMap { it.archiveFile })
+    sourcesFile.set(loomx.modSourcesJar.flatMap { it.archiveFile })
+    gameVersions.addAll(compatibleVersions)
+    loaders.add("fabric")
+    environment.set("client_only")
+}
+
 tasks {
     processResources {
         fun MutableMap<String, String>.register(key: String, property: String) {
